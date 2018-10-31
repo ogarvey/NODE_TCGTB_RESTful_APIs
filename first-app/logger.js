@@ -3,7 +3,7 @@ var url = 'https://mylogger.io/log';
 
 function log(message) {
     // Send an HTTP request to url
-    console.log('Message::',message)
+    console.log('Message:::',message)
 }
 
 // Add function to exports
