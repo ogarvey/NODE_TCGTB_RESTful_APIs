@@ -1,10 +1,8 @@
-const EventEmitter = require('events');
+const Logger = require('../first-app/logger');
+const logger = new Logger();
 
-const emitter = new EventEmitter();
-
-emitter.addListener('messageLogged', (data) => {
-    console.log('Listener called!');
-    console.log('With data:::', data)
+logger.on('messageLogged', (arg) => {
+    console.log('Listener called:::', arg);
 });
 
-emitter.emit('messageLogged', 'SomeTestData');
+logger.log('message');
