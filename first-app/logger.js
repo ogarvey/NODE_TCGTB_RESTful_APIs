@@ -7,4 +7,7 @@ function log(message) {
 }
 
 // Add function to exports
-module.exports.log = log;
+//module.exports.log = log;
+
+// Alternative for just one function
+module.exports = log
