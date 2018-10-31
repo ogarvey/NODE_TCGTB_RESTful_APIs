@@ -9,6 +9,7 @@
   "author": "Oliver Garvey",
   "license": "ISC",
   "dependencies": {
+    "mongoose": "^5.3.8",
     "underscore": "^1.9.1"
   }
 }
